@@ -21,7 +21,7 @@ return [
      *
      * For reference, see https://defstudio.github.io/telegraph/webhooks/overview
      */
-    'webhook_handler' => DefStudio\Telegraph\Handlers\EmptyWebhookHandler::class,
+    'webhook_handler' => App\Http\Telegraph\WebHookOne::class,
 
     /*
      * Sets a custom domain when registering a webhook. This will allow a local telegram bot api server
@@ -35,7 +35,7 @@ return [
      * If enabled, Telegraph dumps received
      * webhook messages to logs
      */
-    'debug_mode' => false,
+    'debug_mode' => true,
 
     /*
      * If enabled, unknown webhook commands are
