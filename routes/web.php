@@ -18,4 +18,4 @@ Route::get('/', function () {
 })
 ->name('home');
 Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
-Route::get('/bot/{id}', [App\Http\Controllers\BotController::class, 'index'])->name('bot.index');
+Route::post('/bot/{id}', [App\Http\Controllers\BotController::class, 'index'])->name('bot.index');
