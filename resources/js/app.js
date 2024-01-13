@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
-import GlobalComponents  from './components/ui'
-import App from './App.vue'
-import router from './router'
+import GlobalComponents  from '../js/components/ui'
+import App from '../js/App.vue'
+import router from '../js/router'
 
 
 const app = createApp(App)
