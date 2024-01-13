@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts.app');
+    return view('Welcome');
 })
-->name('application');
-
-Route::get('{any}', function () {
-    return view('layouts.app');
-})->where('any', '.*');
+->name('home');
+Route::get('/profile', function () {
+    return view('Profile');
+})
+->name('profile');

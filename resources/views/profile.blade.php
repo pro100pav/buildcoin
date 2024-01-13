@@ -9,6 +9,6 @@
 <body>
     <a href="{{route('home')}}">Домой</a>
     <a href="{{route('profile')}}">Профиль</a>
-    Домащняя
+    Профиль
 </body>
 </html>
