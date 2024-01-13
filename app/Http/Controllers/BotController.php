@@ -46,7 +46,7 @@ class BotController extends Controller
                     try {
                         $response = $telegram->sendMessage([
                             'chat_id' => $chat_id,
-                            'text' => 'Вы прошли бота полностью, если хотите перезапустить его, нажмите ии введите команду /start',
+                            'text' => "Привет $user->name, нажмите ии введите команду /start",
                             
                         ]);
                     } catch (TelegramResponseException $e) {
