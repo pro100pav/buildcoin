@@ -12,7 +12,9 @@ use Illuminate\Http\Request;
 class ProfileController extends Controller
 {
     public function index(Request $request){   
-        dd($request); 
+        return view('profile');
+    }
+    public function index(Request $request){   
         return view('profile');
     }
 }
