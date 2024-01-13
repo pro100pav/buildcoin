@@ -17,3 +17,7 @@ Route::get('/', function () {
     return view('layouts.app');
 })
 ->name('application');
+
+Route::get('{any}', function () {
+    return view('layouts.app');
+})->where('any', '.*');

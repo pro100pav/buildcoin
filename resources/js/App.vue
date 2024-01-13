@@ -1,5 +1,10 @@
+<script setup>
+import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
+
+</script>
 <template>
-    <h1>
-        Установили
-    </h1>
+    <UNavigate></UNavigate>
+  <RouterView />
+  <Footer></Footer>
 </template>
