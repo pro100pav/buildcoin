@@ -17,7 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 })
 ->name('home');
-Route::get('/profile', function () {
-    return view('profile');
-})
-->name('profile');
+Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile');

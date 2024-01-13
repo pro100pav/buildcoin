@@ -9,6 +9,12 @@
 <body>
     <a href="{{route('home')}}">Домой</a>
     <a href="{{route('profile')}}">Профиль</a>
-    Домащняя
+    Домашняя
+    <div id="info"></div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        document.getElementById("info").innerHTML = JSON.stringify(tg);
+    </script>
 </body>
 </html>

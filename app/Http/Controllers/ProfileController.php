@@ -9,9 +9,10 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 
-class BotController extends Controller
+class ProfileController extends Controller
 {
-    public function index(Request $request){    
-        return view('game');
+    public function index(Request $request){   
+        dd($request); 
+        return view('profile');
     }
 }
