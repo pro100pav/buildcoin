@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\Bots;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
@@ -11,7 +11,7 @@ use Telegram\Bot\Exceptions\TelegramResponseException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 
-class BotsTelegramController extends Controller
+class BotController extends Controller
 {
     public function index(Request $request, $id){
         $bot = Bot::find($id); // находим бота
