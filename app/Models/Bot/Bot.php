@@ -1,18 +1,15 @@
 <?php
 
-namespace App\Models\Bots;
+namespace App\Models\Bot;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Bots extends Model
+class Bot extends Model
 {
     use HasFactory;
     protected $fillable = [
         'token',
         'name',
     ];
-
-
-
 }
