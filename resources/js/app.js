@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import GlobalComponents  from '@/components/ui'
+import GlobalComponents  from './components/ui'
 import App from './App.vue'
 import router from './router'
 
