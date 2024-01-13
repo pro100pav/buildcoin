@@ -34,7 +34,7 @@ class BotController extends Controller
 
             if($text){
                 if($text == '/start'){
-                    $user = User::where('telegram_id', $chat_id)->first();
+                    $user = User::where('id_telegram', $chat_id)->first();
                     if(!$user){
                         $user = User::create([
                             'username' => $username,
